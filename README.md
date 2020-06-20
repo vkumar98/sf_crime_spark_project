@@ -28,14 +28,14 @@ bin/kafka-server-start.sh config/server.properties
   bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic com.udacity.calls --from-beginning
 ```
 Output should look like:
-<img src='sf_kafka_console_consumer_output.PNG'/>
+<img src='kafka_producer_server.png'/>
 
 - Verify data with 	"consumer_server.py". 
 ```
  python consumner_server.py
 ```
 Output should look like:
-<img src='sf_kafka_console_server_output.PNG'/>
+<img src='kafka_consumer_server.png'/>
 
 
 
@@ -47,7 +47,7 @@ Output should look like:
  
  ```
   Spark UI should look like :
-   <img src='spark_ui.PNG'/>
+   <img src='spark_ui.png'/>
 
 ### Step 3: Answers to the questions:
 1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
