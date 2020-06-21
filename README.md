@@ -22,7 +22,11 @@ bin/kafka-server-start.sh config/server.properties
 
 #### Step 1: Produce messages to kafka broker 
 
-- start the bootstrap server using this Python command: .python producer_server.py
+- start producing messages to bootstrap server using this Python command: 
+```
+    python kafka_server.py
+```
+
 - Verify data produce correctly with following command
 ```
   bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic com.udacity.calls --from-beginning
